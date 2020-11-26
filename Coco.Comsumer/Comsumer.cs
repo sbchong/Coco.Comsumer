@@ -62,13 +62,11 @@ namespace Coco.Comsumer
                     if (ConnectToServer(ref tcpClient))
                     {
                         CommunicationBase cb = new CommunicationBase();
-                        cb.SendMsg(1.ToString(), tcpClient);
-                        cb.ReceiveMsg(tcpClient);
-                        cb.SendMsg(TopicName, tcpClient);
+                        var content = $"1\\{TopicName}";
+                        cb.SendMsg(content, tcpClient);
                         var msg = cb.ReceiveMsg(tcpClient);
-                        if (!string.IsNullOrEmpty(msg))
+                        if (!string.IsNullOrEmpty(msg) && msg != "Ok")
                         {
-                            Msg = msg;
                             MsgReceived?.Invoke(msg);
                         }
                         tcpClient.Close();
