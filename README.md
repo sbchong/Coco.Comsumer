@@ -1,6 +1,6 @@
 # Coco.Comsumer
 
-Coco是一个使用dotnet来实现的简单高效消息队列，本项目是Coco消息队列的asp.net core消费者插件.
+[Coco](https://github.com/sbchong/Coco)是一个使用dotnet来实现的简单高效消息队列，本项目是Coco消息队列的asp.net core消费者插件.
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sbchong/Coco.Comsumer/Coco.Comsumer)
 ![Nuget](https://img.shields.io/nuget/dt/Coco.Comsumer)
