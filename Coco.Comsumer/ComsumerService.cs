@@ -10,7 +10,8 @@ namespace Coco.Comsumer
     {
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            return Task.Run(() => base.Start());
+            //return Task.Run(() => base.Start());
+            throw new NotImplementedException();
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
@@ -19,10 +20,6 @@ namespace Coco.Comsumer
         }
 
         public ComsumerService(string host, string topicName) : base(host, topicName)
-        {
-        }
-
-        protected override void SubScribe(string msg)
         {
         }
     }
