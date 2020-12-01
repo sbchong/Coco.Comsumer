@@ -1,5 +1,5 @@
 
-name: Coco.Producer CI/CD
+name: Coco.Comsumer
 
 on:
   push:
