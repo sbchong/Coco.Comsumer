@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <Authors>liux</Authors>
     <RepositoryUrl>https://github.com/sbchong/Coco.Comsumer.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/sbchong/Coco.Comsumer</PackageProjectUrl>

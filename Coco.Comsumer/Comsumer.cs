@@ -65,6 +65,7 @@ namespace Coco.Comsumer
             new Thread(() => GetObject(host, topicName, callback)).Start();
         }
 
+
         private bool ConnectToServer(ref TcpClient tcpClient)
         {
             string hostIP = string.IsNullOrEmpty(Host) ? "127.0.0.1" : Host;
@@ -118,7 +119,7 @@ namespace Coco.Comsumer
                     if (ConnectToServer(ref tcpClient, host))
                     {
                         CommunicationBase cb = new CommunicationBase();
-                        var content = $"1\\{topicName}";
+                        var content = $"1^^^{topicName}";
                         cb.SendMsg(content, tcpClient);
                         var msg = cb.ReceiveMsg(tcpClient);
                         if (!string.IsNullOrEmpty(msg) && msg != "Ok")
@@ -141,7 +142,7 @@ namespace Coco.Comsumer
                     if (ConnectToServer(ref tcpClient))
                     {
                         CommunicationBase cb = new CommunicationBase();
-                        var content = $"1\\{TopicName}";
+                        var content = $"1^^^{TopicName}";
                         cb.SendMsg(content, tcpClient);
                         var msg = cb.ReceiveMsg(tcpClient);
                         if (!string.IsNullOrEmpty(msg) && msg != "Ok")
@@ -165,7 +166,7 @@ namespace Coco.Comsumer
                     if (ConnectToServer(ref tcpClient))
                     {
                         CommunicationBase cb = new CommunicationBase();
-                        var content = $"1\\{TopicName}";
+                        var content = $"1^^^{TopicName}";
                         cb.SendMsg(content, tcpClient);
                         var msg = cb.ReceiveMsg(tcpClient);
                         if (!string.IsNullOrEmpty(msg) && msg != "Ok")
@@ -189,7 +190,7 @@ namespace Coco.Comsumer
                     if (ConnectToServer(ref tcpClient, host))
                     {
                         CommunicationBase cb = new CommunicationBase();
-                        var content = $"1\\{topicName}";
+                        var content = $"1^^^{topicName}";
                         cb.SendMsg(content, tcpClient);
                         var msg = cb.ReceiveMsg(tcpClient);
                         if (!string.IsNullOrEmpty(msg) && msg != "Ok")
