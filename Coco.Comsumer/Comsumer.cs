@@ -65,8 +65,6 @@ namespace Coco.Comsumer
             new Thread(() => GetObject(host, topicName, callback)).Start();
         }
 
-        //public abstract void SubScribe(string msg);
-
         private bool ConnectToServer(ref TcpClient tcpClient)
         {
             string hostIP = string.IsNullOrEmpty(Host) ? "127.0.0.1" : Host;

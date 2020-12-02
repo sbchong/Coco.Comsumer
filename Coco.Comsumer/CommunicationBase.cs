@@ -37,7 +37,7 @@ namespace Coco.Comsumer
                 do
                 {
                     numberOfBytesRead = ns.Read(receiveBytes, 0, tmpTcpClient.ReceiveBufferSize);
-                    receiveMsg = Encoding.Default.GetString(receiveBytes, 0, numberOfBytesRead);
+                    receiveMsg += Encoding.Default.GetString(receiveBytes, 0, numberOfBytesRead);
                 }
                 while (ns.DataAvailable);
             }
