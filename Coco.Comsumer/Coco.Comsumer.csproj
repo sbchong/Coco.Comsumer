@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.6.1</Version>
+    <Version>0.0.6.2</Version>
     <Authors>liux</Authors>
     <RepositoryUrl>https://github.com/sbchong/Coco.Comsumer.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/sbchong/Coco.Comsumer</PackageProjectUrl>
@@ -12,7 +12,7 @@
     <RepositoryType>git</RepositoryType>
     <Description>消息队列Coco的消费者扩展包</Description>
     <LangVersion>latest</LangVersion>
-    <AssemblyVersion>0.0.6.1</AssemblyVersion>
+    <AssemblyVersion>0.0.6</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
